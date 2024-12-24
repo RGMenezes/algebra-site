@@ -1,0 +1,13 @@
+.fieldsetContainer{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+
+  border: none;
+}
+
+.fieldsetContainer h1,
+.fieldsetContainer h2,
+.fieldsetContainer h3{
+  padding-bottom: 5px;
+}

@@ -1,0 +1,38 @@
+.rangeContainer{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.rangeContainer input{
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  height: 7px;
+  
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid var(--color);
+  border-radius: 10px;
+
+  transition: all .3s ease-in-out;
+}
+
+.rangeContainer input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  
+
+  background-color: var(--purple);
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (min-width: 769px){
+  .rangeContainer input:hover{
+    transform: scale(1.03);
+  }
+}
